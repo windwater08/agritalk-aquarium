@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AgriTalk_Aquarium_Control</title>
+    
+    <script src="./static/jquery.min.js"></script>
+    
+    <script src="./static/csmapi_modified.js"></script>
+    <script src="./static/SwitchSet.js"></script>
+    <link rel="stylesheet" type="text/css" href="./static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./static/bootstrap/css/bootstrap-theme.min.css" >
+    <script src="./static/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./static/bootstrap/css/bootstrap-toggle.min.css">
+    <script src="./static/bootstrap/js/bootstrap-toggle.min.js"></script>
+
+    <link rel="stylesheet" href="./static/main.css">
+  </head>
+  <body class="hold-transition skin-black-iot sidebar-mini" style="background:#00FF00;background-color:transparent;">
+    <div class="col-sm-6 col-xs-12">
+	    <!--
+	    <legend>
+	        <span class="text-success"> Lab117_Aquarium_Control </span>
+	         
+	        <button type="button" class="btn btn-danger close" aria-label="Close" onclick="dereg('PlanBox')"> <span aria-hidden="true">&times;</span> </button>
+	    	
+	    </legend>
+		 -->
+	    
+	    <div class="checkbox">
+	        <label>
+		    <input  type="checkbox" data-toggle="toggle" id="Switch1">
+		    <span class = "Switch1 h2" id="Switch1-span">餵食器(Feeder)</span>
+	        </label>
+	    </div>
+	    
+	    <div class="checkbox">
+	        <label>
+		    <input  type="checkbox" data-toggle="toggle" id="Switch2">
+		    <span class = "Switch2 h2" id="Switch2-span">加熱棒(Heater)</span>
+	        </label>
+	    </div>
+	    
+	    <div class="checkbox">
+	        <label>
+		    <input  type="checkbox" data-toggle="toggle" id="Switch3">
+		    <span class = "Switch3 h2" id="Switch3-span">打氣機(Air Pump)</span>
+	        </label>
+	    </div>
+	    
+	    <div class="checkbox">
+	        <label>
+		    <input  type="checkbox" data-toggle="toggle" id="Switch4">
+		    <span class = "Switch4 h2" id="Switch4-span">冷風扇(Fans)</span>
+	        </label>
+	    </div>
+	    
+	    <div class="checkbox">
+	        <label>
+		    <input  type="checkbox" data-toggle="toggle" id="Switch5">
+		    <span class = "Switch5 h2" id="Switch5-span">燈光(Light)</span>
+	        </label>
+	    </div>
+	    
+	    <div class="checkbox">
+	        <label>
+		    <input  type="checkbox" data-toggle="toggle" id="Switch6">
+		    <span class = "Switch6 h2" id="Switch6-span">紫外殺菌燈(UV)</span>
+	        </label>
+	    </div>
+	    
+	    <div class="checkbox">
+	        <label>
+		    <input  type="checkbox" data-toggle="toggle" id="Switch7">
+		    <span class = "Switch7 h2" id="Switch7-span"> Switch7 </span>
+	        </label>
+	    </div>
+	    
+	    <div class="checkbox">
+	        <label>
+		    <input  type="checkbox" data-toggle="toggle" id="Switch8">
+		    <span class = "Switch8 h2" id="Switch8-span"> Switch8 </span>
+	        </label>
+	    </div>
+	</div>
+    <script> 
+        set_device_id('Agritalk_Aquarium_Control', 8);
+        console.log('set_device_id ');
+        check_registerion_state('Agritalk_Aquarium_Control');
+        console.log('check_registerion_state ');
+    </script>
+
+  </body>
+</html>
